@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="key_preference_category_switch"
+        app:title="Category Switch">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_visibility_black_24dp"
+            app:key="key_preference_switch"
+            app:summary="Tap to show/hide below preference"
+            app:title="Switch Preference" />
+
+        <Preference
+            android:summary="This preference will be shown/hidden"
+            android:title="Text Preference"
+            app:key="key_preference_switch_text" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_check_box"
+        app:title="Category Checkbox">
+
+        <CheckBoxPreference
+            app:key="key_preference_check_box"
+            app:title="Checkbox Preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_seekbar"
+        app:title="Category Seekbar">
+
+        <SeekBarPreference
+            app:key="key_preference_seekbar"
+            app:title="Seekbar Preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_nested"
+        app:title="Category Nested Preference">
+
+        <Preference
+            app:key="key_preference_nested"
+            app:summary="Tap to open nested preference"
+            app:title="Nested Preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_edit_text"
+        app:title="Category EditText">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_edit_black_24dp"
+            app:key="key_preference_edit_text"
+            app:title="EditText Preference"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_list"
+        app:title="Category List">
+
+        <ListPreference
+            android:entryValues="@array/list_preference_entry_values"
+            app:entries="@array/list_preference_entries"
+            app:key="key_preference_list"
+            app:title="List Preference"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="key_preference_category_multi_select_list"
+        app:title="Category Multi Select List">
+
+        <MultiSelectListPreference
+            android:entryValues="@array/list_preference_entry_values"
+            app:entries="@array/list_preference_entries"
+            app:key="key_preference_multi_select_list"
+            app:title="Multi Select List Preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="key_preference_category_intent"
+        app:title="Category Intent">
+
+        <Preference
+            app:key="key_preference_intent"
+            app:title="View webpage">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://jetpackio.blogspot.com/" />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
