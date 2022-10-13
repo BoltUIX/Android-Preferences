@@ -2,6 +2,29 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <Preference
+        app:key="icon_example"
+        app:title="@string/title_preference_simple" />
+    <Preference
+        app:key="icon_example"
+        app:title="@string/title_preference"
+        app:summary="@string/summary_preference" />
+    <Preference
+        app:key="icon_example"
+        app:title="@string/title_preference"
+        app:summary="@string/summary_preference"
+        app:icon="@drawable/ic_android_black_24dp"/>
+    <Preference
+        app:key="single_line_title"
+        app:title="@string/summary_preference"
+        app:summary="@string/summary_preference"
+        app:singleLineTitle="true" />
+
+
+
+
+
+
     <PreferenceCategory
         app:key="key_preference_category_switch"
         app:title="Category Switch">
@@ -35,7 +58,9 @@
 
         <SeekBarPreference
             app:key="key_preference_seekbar"
-            app:title="Seekbar Preference" />
+            app:title="Seekbar Preference"
+            app:defaultValue="20"
+            />
 
     </PreferenceCategory>
 
@@ -57,8 +82,11 @@
         <EditTextPreference
             app:icon="@drawable/ic_edit_black_24dp"
             app:key="key_preference_edit_text"
-            app:title="EditText Preference"
+            app:title="Edit me."
             app:useSimpleSummaryProvider="true" />
+
+        <!--use title or dialogTitles-->
+        <!--   app:dialogTitle="@string/dialog_title_preference"-->
 
     </PreferenceCategory>
 
@@ -72,6 +100,8 @@
             app:key="key_preference_list"
             app:title="List Preference"
             app:useSimpleSummaryProvider="true" />
+        <!--use title or dialogTitles-->
+        <!--   app:dialogTitle="@string/dialog_title_preference"-->
 
     </PreferenceCategory>
 
@@ -87,6 +117,21 @@
 
     </PreferenceCategory>
 
+
+    <PreferenceCategory
+        app:key="key_preference_category_multi_select_list"
+        app:title="Category Multi Select List">
+
+        <DropDownPreference
+            app:key="dropdown_example"
+            app:title="Drop Down Preference"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/list_preference_entries"
+            app:entryValues="@array/list_preference_entry_values"/>
+
+    </PreferenceCategory>
+
+
     <PreferenceCategory
         android:key="key_preference_category_intent"
         app:title="Category Intent">
@@ -97,10 +142,38 @@
 
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://jetpackio.blogspot.com/" />
+                android:data="http://www.boltuix.blogspot.com/" />
 
         </Preference>
 
     </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:key="advanced"
+        app:title="Learning Preferences"
+        app:initialExpandedChildrenCount="1">
+
+        <Preference
+            app:key="expandable_example"
+            app:title="Hello I am Simple text"
+            app:summary="I am the preference that will be showed when the preference is not expanded"/>
+
+        <Preference
+            app:title="Bolt UIX"
+            app:summary="Click me to open the Bolt UIX website">
+
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://www.boltuix.com/"/>
+
+        </Preference>
+
+        <SwitchPreferenceCompat
+            app:key="parent"
+            app:title="Newsletter"
+            app:summary="You can turn me on/off i.e. you can toggle me!"/>
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>

@@ -62,4 +62,10 @@
         <item>Entry Value 2</item>
         <item>Entry Value 3</item>
     </string-array>
+
+
+    <string name="title_preference_simple">Simple text title</string>
+    <string name="title_preference"><b>You</b> <i>are</i> <u>awesome</u></string>
+    <string name="summary_preference">You can use some styles in your preferences by using the described way.</string>
+    <string name="dialog_title_preference">Edit me.</string>
 </resources>

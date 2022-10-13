@@ -17,7 +17,11 @@ class SettingsFragment : PreferenceFragmentCompat(),
         private val TAG = SettingsFragment::class.java.simpleName
     }
 
+    /**
+     * A preference fragment that demonstrates commonly used preference attributes.
+     */
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        //To display your Preference’s XML file, all you need to do is just use the setPreferencesFromResource(). For example:
         setPreferencesFromResource(R.xml.settings_preference, rootKey)
 
         preferenceManager.sharedPreferences!!.registerOnSharedPreferenceChangeListener(this)
