@@ -6,3 +6,6 @@ Implementing a Settings screen in your application is the best way to provide a 
 For ex, your application can let the user select the tone for the notification received from the application. 
 
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMVW8hwIfcKWXJMPHTGzoo3Rvyg3Kh0f0sF0hdv3HmND1EkcmOLTq30OKO7kBc24YNhfBH633eKFLQm15oKTIDVo-dy5_RlgjefmWRwmgue1LlMDCBGUSbXdg3iS22RWrPWjK4hI-PjP2MMUC2dPA-DCrjHeVnWAZOfjSKWshtt6W4UC9-JnOvw_75/s16000/Preferences.jpg" alt="Setting">
+
+Read more:
+https://www.boltuix.com/2022/10/how-to-implementing-android-jetpack.html

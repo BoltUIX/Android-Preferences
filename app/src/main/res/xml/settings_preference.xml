@@ -64,7 +64,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+ <!--   <PreferenceCategory
         app:key="key_preference_category_nested"
         app:title="Category Nested Preference">
 
@@ -73,7 +73,7 @@
             app:summary="Tap to open nested preference"
             app:title="Nested Preference" />
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <PreferenceCategory
         app:key="key_preference_category_edit_text"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".preference.PreferenceFragment">
+    tools:context=".SettingsFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_marginTop="47dp"
@@ -61,16 +61,8 @@
                 android:text=""
                 android:id="@+id/pref_info"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-      <!--      <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_margin="15dp"
-                android:alpha=".5"
-                android:background="#ECECEC" />-->
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
